@@ -1,5 +1,41 @@
 /*************************** General ***************************/
 
+/******** logo svg ********/
+.cls-1 {
+  fill: #0a314e;
+}
+
+.cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+  stroke-width: 0px;
+}
+
+.cls-2 {
+  fill: #b9955d;
+}
+
+.cls-3 {
+  fill: #8bc4e5;
+}
+
+.cls-4 {
+  fill: #fff;
+}
+
+.cls-5 {
+  fill: #051f35;
+}
+
+.cls-6 {
+  fill: #003259;
+}
+/******** logo svg end ********/
+/******** facebook svg ********/
+.cls-7 {
+  fill: #fff;
+  stroke-width: 0px;
+}
+/******** facebook svg end ********/
+
 img {
 	/*
 	height: 75%;
@@ -9,9 +45,13 @@ img {
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
 }
 
-.container {
-	margin-bottom: 5px;
+.container-fluid { 
+	padding-right: calc(var(--bs-gutter-x)* 0);
+  padding-left: calc(var(--bs-gutter-x)* 0);
 }
+
+
+
 
 .header {
 	padding: 2rem 2rem 0rem;
@@ -39,7 +79,7 @@ img {
 	margin-top: 1.5rem;
 }
 
-
+/*************************** General END ***************************/
 /*************************** Nav Bar START ***************************/
 
 .navbar {
@@ -66,10 +106,14 @@ img {
 .navbar-nav {
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-serif;
-    /*font-variant: small-caps;*/
-    text-align: center;
-    font-size: 1rem; /*16px;*/
+  text-align: center;
+  font-size: 1rem;
+  padding-right: 30px;
 
+}
+
+.navbar-nav img {
+	padding-left: 30px;
 }
 
 .navbar-collapse {
@@ -104,29 +148,39 @@ img {
 /*************************** Nav Bar END ***************************/
 /*************************** Hero Image START ***************************/
 .bg-hero {
-	background-color: #052c65; /*001c3f;*/
-	max-height: 600px;
+	background-color: #052c65; /*
+	max-height: 580px;
+	width: 100%;
+	z-index: 0; */
 }
 
 .left-img-hero {
-	/*max-height: 450px;*/
-	padding-top: 25px;
-	padding-bottom: 100px;
+	padding-top: 0px;
 }
 
+.carousel {
+  padding-left: 0px;
+}
 .carousel > .carousel-inner > .carousel-item > img {
-	width: auto;
-	height: 450px;
-	max-height: 450px;
-	margin: auto;
+	max-height: 600px;
+	width: 100%;
+	z-index: 0;
 }
 
 .carousel-inner img {
-  margin: auto;
+
+}
+
+.carousel-caption {
+	bottom: 0;
+	right: unset;
+	left: 12%;
+	padding-bottom: 1rem;
+	text-align: left;
 }
 
 .hero-links {
-	padding: 0px;
+	padding-top: 13px;
 }
 
 .hero-link {
@@ -166,37 +220,70 @@ img {
 	--bs-card-border-width: 0px;
 }
 
-.lien-1 {
-	text-align: left;
-	margin-top: 3.4rem;
-	margin-left: 2rem;
-
+h5 {
+	color: #ffffff; 
 }
 
-.lien-2 {
-	text-align: right;
-	margin-top: 4.8rem;
-	margin-right: 2rem;
-}
-
-.lien-3 {
-	text-align: left;
-	margin-top: 4.5rem;
-	margin-left: 2rem;
-}
-
-.lien-4 {
-	text-align: right;
-	margin-top: 4.3rem;
-	margin-right: 2rem;
-}
 
 
 /*************************** Hero Image END ***************************/
-/*************************** Transitions START ***************************/
+/*************************** Wave START ***************************/
+.wave_blue {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url(../images/wave_blue.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    -webkit-background-size: 100% 100%;
+    background-size: 100%;
+    z-index: 20;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url(../images/bg_wave.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    -webkit-background-size: 100% 100%;
+    background-size: 100%;
+    z-index: 30;
+}
+
+/*************************** Wave END ***************************/
+/*************************** Content START ***************************/
+.content-col-1 {
+	margin: 25px 0 25px 35px;
+	z-index: 3;
+}
+
+.content-head {
+	color: #000;
+}
+
+.content-para {
+	color: #000;
+}
+
+
+.container-fluid>.resp-img {
+	--bs-gutter-x: 0rem !important;
+	max-width: 100%;
+	height: auto;
+	z-index: 1;
+	margin-top: -70px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .img-fluid {
-	max-width: 720px;
-	height: 250px;
+	
 }
 
 
@@ -220,7 +307,7 @@ body {
 }
 
 
-
+/*
 .container {
   width: 100%;
   height: 500px;
@@ -243,6 +330,22 @@ body {
   background: black;
   left: 800px;
   top: 800px;
+}
+
+*/
+a.navbar-brand svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.containerA {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
 /*************************** Transitions END ***************************/
@@ -309,12 +412,62 @@ body {
 footer {
 	font-size: 14px;
 	color: #fff;
-	text-align: center;
-	background-color: #1b001b;
-	height: 50px;
-	line-height: 50px;
+	background-color: #001c3f;
+	height: auto;
+	line-height: 1.7rem;
+	padding-left: 30px;
 }
 
+.col-title {
+	font-family: sans-serif;
+	font-size: 1rem;
+	line-height: 2.5rem;
+	color: #8bc4e5;
+
+	background-color: ;
+  width: 85%;
+  border: 1px solid #446bd8;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.col-svg svg {
+
+}
+/* #052c65 */
+.nav-foot { 
+	width: 40%;
+	/*
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	 */
+}
+
+.nav-foot-link {
+    color: #ffffff;
+    padding: 4px 30px 2px 4px; 
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul.nav-foot-sub, ul.nav-foot-sub a { 
+	color: #fff;
+	list-style-type: none;
+	text-align: left;
+	text-decoration: none;
+
+	/*
+	font-size: 14px;
+	
+	background-color: #001c3f;
+	height: auto;
+	line-height: 1.7rem;
+	text-decoration: none; */
+}
+
+/************************* Footer end *************************/
 /************************* Form *************************/
 
 
