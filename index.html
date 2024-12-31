@@ -12,24 +12,22 @@
 
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 
-    <title>HAC NATATION SEINE METROPOLE</title>
+    <title>HAC Natation Club Nautique Havrais</title>
 
 </head>
 
 
 <body>
-<!--------------------------------- NAV START --------------------------------->
-	<nav class="navbar sticky-top navbar-expand-lg">
-	  <div class="container-fluid">
+<!--------------------------------- NAV DESKTOP START --------------------------------->
+	<nav class="navbar sticky-top navbar-expand-lg bg-body-primary hidden-xs hidden-sm">
 
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
+
+	  <div class="container-fluid">
 
 	    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 	      <div class="navbar-nav">
 	      	<a class="navbar-brand" href="#">
-	  				<img src="assets/brand/logo.svg" width="250" height="110" class="d-inline-block align-center" alt="">
+	  				<img src="assets/brand/logo.svg" width="250" height="110" class="d-inline-block" alt="">
 					</a>
 				</div>
 	    </div>
@@ -87,6 +85,61 @@
 	  </div>
 	</nav>
 
+<!--------------------------------- NAV MOBILE START --------------------------------->
+<nav class="navbar bg-body-tertiary fixed-top visible-xs visible-sm">
+  <div class="container-fluid  nav-mobile">
+
+  	<div class="mobile_hamburger col-2">
+  		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+			  <div class="offcanvas-header">
+			    <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			  </div>
+			  <div class="offcanvas-body">
+			    <div class="mobile_menu">
+			      <ul class="" aria-labelledby="">
+			        <li><a class="" href="#">Le Club</a></li>
+			        <ul>
+			        	<li><a class="" href="#">Chartre du Club</a></li>
+			        	<li><a class="" href="#">&Eacute;quipes d’Encadrants</a></li>
+			        	<li><a class="" href="#">Lyc&eacute;es en contrats</a></li>
+			        	<li><a class="" href="#">Partenaires</a></li>
+			        </ul>
+			        <li><a class="" href="#">Formations</a></li>
+			        <ul>
+			        	<li><a class="" href="#">Junior</a></li>
+			        	<li><a class="" href="#">Master</a></li>
+			        </ul>
+			        <li><a class="" href="#">Planning</a></li>
+			        <ul>
+			        	<li><a class="" href="#">Piscine</a></li>
+			        	<li><a class="" href="#">Salle de Musculations</a></li>
+			        </ul>
+			        <li><a class="" href="#">Actualit&eacute;s</a></li>
+			        <li><a class="" href="#">Inscription</a></li>
+			        <li><a class="" href="#">Contact</a></li>
+			      </ul>
+			    </div>
+			  </div>
+			</div>
+
+		</div>
+
+    <div class="mobile_logo col-8 ">
+	  	<a class="navbar-brand" href="#">
+				<img src="assets/brand/logo_mobile.svg" width="200" height="63" class="d-inline-block" alt="">
+			</a>
+		</div>
+
+		<div class="mobile_center col-2"></div>
+
+  </div>
+</nav>
+
+
 
 <!--------------------------------- HERO START --------------------------------->
 		<div class="container-fluid bg-hero">
@@ -95,8 +148,12 @@
 			  <div class="carousel-inner">
 
 			    <div class="carousel-item active">
-			      <img src="assets/images/pub_hero_1.png" class="d-block w-100" alt="pub">
-			      <div class="carousel-caption d-none d-md-block" style="">
+			    	<picture>
+						  <source media="(max-width: 425px)" srcset="assets/images/pub_hero_mobile_1.png" alt="mobile img" />
+						  <source media="(max-width: 768px)" srcset="tablet-img.jpg" alt="tablet img" />
+						  <img src="assets/images/pub_hero_1.png" class="d-block w-100" alt="desktop img" />
+						</picture> 
+			      <div class="carousel-caption d-none d-md-block w3-round-xxlarge hidden-xs hidden-sm" style="">
 					    <h5 style="">Championnats de France 2024</h5>
 					    <p style="">16-21 Juin - L'Odys&eacute;e Chartres</p>
 					  </div>
@@ -104,16 +161,20 @@
 
 			    <div class="carousel-item">
 			    	<a href="https://www.bfmtv.com/normandie/replay-emissions/bonsoir-la-normandie/jo-2024-un-effet-leon-marchand-au-hac-natation_VN-202409180709.html" target="_blank">
-			    		<img src="assets/images/pub_hero_2.png" class="d-block w-100" alt="video">
-			    	</a>
-			     
-			      <div class="carousel-caption d-none d-md-block" style="">
+				    	<picture>
+						  	<source media="(max-width: 425px)" srcset="assets/images/pub_hero_mobile_2.png" alt="mobile img" />
+						  	<source media="(max-width: 768px)" srcset="tablet-img.jpg" alt="tablet img" />
+						  	<img src="assets/images/pub_hero_2.png" class="d-block w-100" alt="desktop img" />
+							</picture> 
+						</a>
+			      <div class="carousel-caption d-none d-md-block w3-round-xxlarge hidden-xs hidden-sm" style="">
 					    <h5 style="">Competition 2024</h5>
 					    <p style="">Le HAC est super</p>
 					  </div>
 			    </div>
 
 			  </div>
+
 			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
 			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			    <span class="visually-hidden">Previous</span>
@@ -168,7 +229,7 @@
 
 	<div class="row">
 
-		<div class="col-3">
+		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 		  <div class="col-title"><strong>CONTACT</strong></div>
 	  	<div class="addresse">
         <p>Piscine Municipale Cours de la République</br>
@@ -178,11 +239,11 @@
       </div>
 	  </div>
 
-	  <div class="col-6">
+	  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 	  	<div class="col-title"><strong>ACC&Egrave;S DIRECT</strong></div>
 
 	  		<div class="row">
-		  		<div class="col-3 nav-foot">
+		  		<div class="nav-foot col-lg-3 col-md-3 col-sm-3 col-xs-12">
 		      	<ul class="justify-content-end">
 
 			        	<li class="">
@@ -210,7 +271,7 @@
 						</ul>
 					</div>
 
-					<div class="col-3 nav-foot">
+					<div class="nav-foot col-lg-3 col-md-3 col-sm-3 col-xs-12">
 						<ul class="justify-content-end">
 		          <li class="">
 		            <a class="nav-foot-link" href="#">
@@ -247,7 +308,7 @@
 			</div>
 		
 
-	  <div class="col-3">
+	  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 	  	<div class="col-title"><strong>REJOIGNEZ-NOUS</strong></div>
 	  	<div class="col-svg">
 				<svg id="svg9" width="150" height="150" xmlns="http://www.w3.org/2000/svg">
@@ -269,14 +330,15 @@
        
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 -->
+<!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <script src="assets/js/actionold.js" type="text/javascript"></script>  
-<!--
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     
 
     <script>
