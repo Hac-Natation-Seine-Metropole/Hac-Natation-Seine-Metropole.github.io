@@ -1,34 +1,6 @@
 /*************************** General ***************************/
 
-/******** logo svg ********/
-.cls-1 {
-  fill: #0a314e;
-}
 
-.cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
-  stroke-width: 0px;
-}
-
-.cls-2 {
-  fill: #b9955d;
-}
-
-.cls-3 {
-  fill: #8bc4e5;
-}
-
-.cls-4 {
-  fill: #fff;
-}
-
-.cls-5 {
-  fill: #051f35;
-}
-
-.cls-6 {
-  fill: #003259;
-}
-/******** logo svg end ********/
 /******** facebook svg ********/
 .cls-7 {
   fill: #fff;
@@ -36,14 +8,6 @@
 }
 /******** facebook svg end ********/
 
-img {
-	/*
-	height: 75%;
-	width: auto; 100%
-	
-	height: auto;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
-}
 
 .container-fluid { 
 	padding-right: calc(var(--bs-gutter-x)* 0);
@@ -51,50 +15,14 @@ img {
 }
 
 
-
-
-.header {
-	padding: 2rem 2rem 0rem;
-}
-
-.header2 {
-	padding: 4rem 2rem .5rem;
-}
-
-.introState {
-	margin-top: 2rem!important; 
-}
-
-.lineDivider {
-  border-top: 1px solid #ebe7e7;
-  margin-bottom: 20px;
-  margin-top: 50px;
-}
-
-.themeHeader1, .themeHeader2 {
-	color: #6c757d;
-}
-
-.themeHeader2 {
-	margin-top: 1.5rem;
-}
-
-/*************************** General END ***************************/
+/*************************** General END   ***************************/
 /*************************** Nav Bar START ***************************/
-.navbar-toggler {
-	border: none;
-	border-color: none;
-	line-height: 2;
-	width: 100%;
+main > .container {
+  padding: 60px 15px 0;
 }
 
-.mobile_hamburger, .mobile_logo, .mobile_center{
-	display: none;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(139, 196, 229, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-
+main > .container {
+	padding-top: 60px;
 }
 
 .navbar {
@@ -109,12 +37,13 @@ img {
     --bs-navbar-nav-link-padding-y: 0rem;
     --bs-navbar-brand-padding-y: 0rem !important;
     --bs-navbar-padding-y: 0rem;
+    height: 100px;
+}
 
+.navbar a.navbar-brand {
+	padding-left: 30px;
 }
-/*   --bs-navbar-toggler-font-size: 1.5rem;*/
-.bg-body-tertiary {
-	background-color: #001c3f;
-}
+s
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
     color: #ffffff;
@@ -162,13 +91,11 @@ img {
     border-radius: var(--bs-dropdown-item-border-radius, 0);
 }
 
-
-
-
 /*************************** Nav Bar END ***************************/
 /*************************** Hero Image START ***************************/
 .bg-hero {
-	background-color: #052c65; /*
+	background-color: #052c65; 
+	margin-top: 100px;/*
 	max-height: 580px;
 	width: 100%;
 	z-index: 0; */
@@ -297,29 +224,13 @@ h5 {
 	padding-right: 0;
 }
 
-.img-fluid {
-	
-}
-
 
 body {
   overflow-x: hidden;
 }
 
 
-.wavy {
-  width: 100%;
-  height: 500px;
-}
 
-.wave {
-	position: absolute;
-}
-
-.wave-2 {
-  width: 100%;
-  top: 556px;
-}
 
 
 /*
@@ -354,52 +265,12 @@ a.navbar-brand svg {
   top: 0;
   left: 0;
 }
-.containerA {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  padding-bottom: 100%;
-  vertical-align: middle;
-  overflow: hidden;
-}
+
 
 /*************************** Transitions END ***************************/
 
 
-.line1 { /*
-	border: none;
-	height: 16px;
-	color: #ebe7e7;
-	background-color: #ebe7e7;
-	opacity: 1;
-	margin-top: .4rem; */
-}
 
-.line2 {
-	margin: 0;
-	border: none;
-	height: 3px;
-	color: #F2D98D;
-	background-color: #A69886;
-	opacity: 1;
-	padding: 0;
-
-}
-
-.line3 {
-	margin: 40px 0 15px 0;
-	border: none;
-	height: 2px;
-	background-color: #CCAEAE;
-	opacity: 1;
-
-}
-
-.titlebg {
-	color: #ffffff;
-	background-color: #A69886;
-	padding-left: 10px;
-}
 
 
 /*************************** lines ***************************/
@@ -409,13 +280,7 @@ a.navbar-brand svg {
 	background-color: #F2A172;
 }
 /************************** Column **************************/
-.pagename {
-	text-decoration: none;
-	font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    transform-origin: 0 0;
-  transform: rotate(90deg);
-}
+
 
 /************************* Column *************************/
 
@@ -428,9 +293,11 @@ footer {
 	font-size: 14px;
 	color: #fff;
 	background-color: #001c3f;
-	height: auto;
 	line-height: 1.7rem;
 	padding-left: 30px;
+	width: 100%;
+	bottom: 0;
+	margin-top: 2px;
 }
 
 .col-title {
@@ -492,103 +359,117 @@ ul.nav-foot-sub, ul.nav-foot-sub a {
 
 
 /*********************************** @Medias ***********************************/
-@media (max-width: 400px){
+@media (max-width: 431px){
 
-/*************************** Nav Bar START ***************************/
-.navbar, .nav-mobile {
-	background-color: #001c3f; 
-	width: 100%;
-	height: 85px;
-}
+	/*************************** Nav Bar START ***************************/
 
-.container-fluid { 
-	width: 100%;
-}
+	.navbar-brand img {
+		width: 180px;
+	}
 
-.navbar-mobile {
-	position: relative;
-  background-image: url(../brand/logo.svg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  -webkit-background-size: 100% 100%;
-  background-size: 100%;
-}
+	.navbar-toggler-icon {
+		background-image: url(../images/menubtn2.svg);
+		margin-right: 20px;
+	}
 
-.navbar-toggler {
-	line-height: 2;
-}
-
-.mobile_hamburger, .mobile_logo, .mobile_center {
-	display: block;
-	border: none; 
-  background-color: #001c3f; 
-}
-
-.mobile_logo{
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 53%;
-}
-
-.offcanvas {
-	background-color: #001c3f;
-	opacity: .85;
-	color: #fff;
-	bottom: unset;
-}
-
-.offcanvas-header .btn-close {
-    padding: calc(var(--bs-offcanvas-padding-y)* 1.2) calc(var(--bs-offcanvas-padding-x)* 1.2);
- /*   color: #8bc4e5;
-    --bs-btn-close-color: #8bc4e5;
-    --bs-btn-close-bg: url('../images/close_button.svg');
-    height: 20px;*/
-}
-
-.mobile_menu ul {
-	list-style-type: none;
-	font-size: 18px;
-	margin-bottom: 2rem;
-}
-
-.mobile_menu li {
+	.bg-hero {
+		background-color: #052c65; 
+		margin-top: 90px;
+	}
 	
-	list-style-type: none;
-	font-size: 16px;
-	margin-bottom: .7rem;
-}
+	
+/*
+	.container-fluid { 
+		width: 100%;
+	}
 
-.mobile_menu li>a{
-	text-decoration: none;
-	color: #fff;
-	line-height: 1.3rem;
-}
+	.navbar-mobile {
+		position: relative;
+	  background-image: url(../brand/logo.svg);
+	  background-repeat: no-repeat;
+	  background-position: bottom;
+	  -webkit-background-size: 100% 100%;
+	  background-size: 100%;
+	}
 
-.close {
-    color: #fff; 
-    opacity: 1;
-}
+	.navbar-toggler {
+		line-height: 2;
+	}
 
-.col-title {
-	margin-top: 20px;
-}
+	.mobile_hamburger, .mobile_logo, .mobile_center {
+		display: block;
+		border: none; 
+	  background-color: #001c3f; 
+	}
+
+	.mobile_logo{
+		display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 53%;
+	}
+
+	.offcanvas {
+		background-color: #001c3f;
+		opacity: .85;
+		color: #fff;
+		bottom: unset;
+	}
+*/
+
+	/*
+	.offcanvas-header .btn-close {
+	    padding: calc(var(--bs-offcanvas-padding-y)* 1.2) calc(var(--bs-offcanvas-padding-x)* 1.2);
+	    */
+	 /*   color: #8bc4e5;
+	    --bs-btn-close-color: #8bc4e5;
+	    --bs-btn-close-bg: url('../images/close_button.svg');
+	    height: 20px;*/
+	}
+
+	.mobile_menu ul {
+		list-style-type: none;
+		font-size: 18px;
+		margin-bottom: 2rem;
+	}
+
+	.mobile_menu li {
+		
+		list-style-type: none;
+		font-size: 16px;
+		margin-bottom: .7rem;
+	}
+
+	.mobile_menu li>a{
+		text-decoration: none;
+		color: #fff;
+		line-height: 1.3rem;
+	}
+
+	.close {
+	    color: #fff; 
+	    opacity: 1;
+	}
+
+	.col-title {
+		margin-top: 20px;
+	}
 
 
-/*************************** HERO START ***************************/
-.wave {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-image: url(../images/bg_wave_mobile.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    -webkit-background-size: 100% 100%;
-    background-size: 100%;
-    z-index: 20;
-}
+	/*************************** HERO START ***************************/
+	.wave {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    left: 0;
+	    bottom: 0;
+	    background-image: url(../images/bg_wave_mobile.svg);
+	    background-repeat: no-repeat;
+	    background-position: bottom;
+	    -webkit-background-size: 100% 100%;
+	    background-size: 100%;
+	    z-index: 20;
+	}
 
 
 }

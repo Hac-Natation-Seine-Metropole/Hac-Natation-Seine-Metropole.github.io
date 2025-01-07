@@ -17,130 +17,66 @@
 </head>
 
 
-<body>
-<!--------------------------------- NAV DESKTOP START --------------------------------->
-	<nav class="navbar sticky-top navbar-expand-lg bg-body-primary hidden-xs hidden-sm">
+<body class="d-flex flex-column h-100">
+<!--------------------------------- NAVBAR START --------------------------------->
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="index.html"><img src="assets/brand/logo.svg" width="250" height="" class="d-inline-block" alt=""></a>
 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
 
-	  <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-	    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-	      <div class="navbar-nav">
-	      	<a class="navbar-brand" href="#">
-	  				<img src="assets/brand/logo.svg" width="250" height="110" class="d-inline-block" alt="">
-					</a>
-				</div>
-	    </div>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Le Club</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Chartre du Club</a></li>
+                            <li><a class="dropdown-item" href="#">&Eacute;quipes d’Encadrants</a></li>
+                            <li><a class="dropdown-item" href="#">Lyc&eacute;es en contrats</a></li>
+                            <li><a class="dropdown-item" href="#">Partenaires</a></li>
+                        </ul>
+                    </li> 
 
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	      <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Formations</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Junior</a></li>
+                        <li><a class="dropdown-item" href="#">Mastern</a></li>
+                      </ul>
+                    </li>
 
-	      	<li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            Le Club
-	          </a>
-	          <ul class="dropdown-menu">
-	            <li><a class="dropdown-item" href="#">Chartre du Club</a></li>
-	            <li><a class="dropdown-item" href="#">&Eacute;quipes d’Encadrants</a></li>
-	            <li><a class="dropdown-item" href="#">Lyc&eacute;es en contrats</a></li>
-	            <li><a class="dropdown-item" href="#">Partenaires</a></li>
-	          </ul>
-	        </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="planning.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Planning</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="planning.html">Piscine</a></li>
+                        <li><a class="dropdown-item" href="#">Salle de Musculations</a></li>
+                      </ul>
+                    </li>
 
-	         <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            Formations
-	          </a>
-	          <ul class="dropdown-menu">
-	            <li><a class="dropdown-item" href="#">Junior</a></li>
-	            <li><a class="dropdown-item" href="#">Master</a></li>
-	          </ul>
-	        </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Actualit&eacute;s</a>
+                    </li>
 
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            Planning
-	          </a>
-	          <ul class="dropdown-menu">
-	            <li><a class="dropdown-item" href="#">Piscine</a></li>
-	            <li><a class="dropdown-item" href="#">Salle de Musculations</a></li>
-	          </ul>
-	        </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Inscription</a>
+                    </li>
 
-	        <li class="nav-item">
-	          <a class="nav-link" aria-current="page" href="#">Actualit&eacute;s</a>
-	        </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-	        <li class="nav-item">
-	          <a class="nav-link" aria-current="page" href="#">Inscription</a>
-	        </li>
-	        
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">Contact</a>
-	        </li>
-
-	      </ul>
-	    </div>
-
-	  </div>
-	</nav>
-
-<!--------------------------------- NAV MOBILE START --------------------------------->
-<nav class="navbar bg-body-tertiary fixed-top visible-xs visible-sm">
-  <div class="container-fluid  nav-mobile">
-
-  	<div class="mobile_hamburger col-2">
-  		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-			  <div class="offcanvas-header">
-			    <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-			  </div>
-			  <div class="offcanvas-body">
-			    <div class="mobile_menu">
-			      <ul class="" aria-labelledby="">
-			        <li><a class="" href="#">Le Club</a></li>
-			        <ul>
-			        	<li><a class="" href="#">Chartre du Club</a></li>
-			        	<li><a class="" href="#">&Eacute;quipes d’Encadrants</a></li>
-			        	<li><a class="" href="#">Lyc&eacute;es en contrats</a></li>
-			        	<li><a class="" href="#">Partenaires</a></li>
-			        </ul>
-			        <li><a class="" href="#">Formations</a></li>
-			        <ul>
-			        	<li><a class="" href="#">Junior</a></li>
-			        	<li><a class="" href="#">Master</a></li>
-			        </ul>
-			        <li><a class="" href="#">Planning</a></li>
-			        <ul>
-			        	<li><a class="" href="#">Piscine</a></li>
-			        	<li><a class="" href="#">Salle de Musculations</a></li>
-			        </ul>
-			        <li><a class="" href="#">Actualit&eacute;s</a></li>
-			        <li><a class="" href="#">Inscription</a></li>
-			        <li><a class="" href="#">Contact</a></li>
-			      </ul>
-			    </div>
-			  </div>
-			</div>
-
-		</div>
-
-    <div class="mobile_logo col-8 ">
-	  	<a class="navbar-brand" href="#">
-				<img src="assets/brand/logo_mobile.svg" width="200" height="63" class="d-inline-block" alt="">
-			</a>
-		</div>
-
-		<div class="mobile_center col-2"></div>
-
-  </div>
-</nav>
-
-
-
+    </nav>
+</header>
+<!--------------------------------- NAVBAR END --------------------------------->
 <!--------------------------------- HERO START --------------------------------->
 		<div class="container-fluid bg-hero">
 
@@ -149,7 +85,7 @@
 
 			    <div class="carousel-item active">
 			    	<picture>
-						  <source media="(max-width: 425px)" srcset="assets/images/pub_hero_mobile_1.png" alt="mobile img" />
+						  <source media="(max-width: 431px)" srcset="assets/images/pub_hero_mobile_1.png" alt="mobile img" />
 						  <source media="(max-width: 768px)" srcset="tablet-img.jpg" alt="tablet img" />
 						  <img src="assets/images/pub_hero_1.png" class="d-block w-100" alt="desktop img" />
 						</picture> 
@@ -162,7 +98,7 @@
 			    <div class="carousel-item">
 			    	<a href="https://www.bfmtv.com/normandie/replay-emissions/bonsoir-la-normandie/jo-2024-un-effet-leon-marchand-au-hac-natation_VN-202409180709.html" target="_blank">
 				    	<picture>
-						  	<source media="(max-width: 425px)" srcset="assets/images/pub_hero_mobile_2.png" alt="mobile img" />
+						  	<source media="(max-width: 431px)" srcset="assets/images/pub_hero_mobile_2.png" alt="mobile img" />
 						  	<source media="(max-width: 768px)" srcset="tablet-img.jpg" alt="tablet img" />
 						  	<img src="assets/images/pub_hero_2.png" class="d-block w-100" alt="desktop img" />
 							</picture> 
