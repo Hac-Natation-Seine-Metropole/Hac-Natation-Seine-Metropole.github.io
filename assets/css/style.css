@@ -1,10 +1,27 @@
 /*************************** General ***************************/
+/******** phone email svg ********/
+.cls-1 {
+  fill: #fff;
+  stroke-width: 0px;
+}
+
+
+/******** phone email svg end ********/
 /******** facebook svg ********/
 .cls-7 {
   fill: #fff;
   stroke-width: 0px;
 }
 /******** facebook svg end ********/
+/******** instagram svg ********/
+.cls-3, .cls-2 {
+  stroke-width: 0px;
+}
+
+.cls-2 {
+  fill: #fff;
+}
+/******** instagram svg end ********/
 
 
 .container-fluid { 
@@ -15,10 +32,6 @@
 
 /*************************** General END   ***************************/
 /*************************** Nav Bar START ***************************/
-main > .container {
-  padding: 60px 15px 0;
-}
-
 .navbar {
     border: none; /* remove all-around border */
     background-color: #001c3f; 
@@ -33,7 +46,7 @@ main > .container {
 }
 
 .navbar a.navbar-brand {
-	padding-left: 30px;
+	padding-left: 35px;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
@@ -234,7 +247,7 @@ h5 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: #ffffff; /*#8bc4e5; */
   font-size: 40px;
-  padding-left: 30px;
+  padding-left: 35px;
   width: 50%;
   background-color: #8bc4e5;
   text-align: left;
@@ -247,6 +260,10 @@ h5 {
 }
 /*************************** SUBPAGES Hero Image END ***************************/
 /*************************** Content START ***************************/
+main > .container {
+  padding: 30px 15px 25px;
+}
+
 .content-col-1 {
 	margin: 25px 0 25px 35px;
 	z-index: 3;
@@ -254,10 +271,14 @@ h5 {
 
 .content-head {
 	color: #000;
+	padding-top: 30px;
 }
 
 .content-para {
+	font-family: 'Open Sans Condensed', sans-serif;
 	color: #000;
+  font-size: 18px;
+  padding-top: 10px;
 }
 
 .container-fluid>.resp-img {
@@ -274,8 +295,27 @@ body {
   overflow-x: hidden;
 }
 
+.main-link {
+    color: #446bd8;
+    text-decoration: none;
+}
 
 
+/*************************** Les Officiels START ***************************/
+.regs-officiels {
+	padding-top: 15px;
+}
+
+.regs-attention {
+	padding-top: 25px;
+	color: #2ea3f2; /*#8bc4e5;*/
+	font-size: 24px;
+}
+
+.img-shadow {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*************************** Les Officiels END ***************************/
 
 
 /*
@@ -304,11 +344,11 @@ body {
 }
 
 */
-a.navbar-brand svg {
+a.navbar-brand svg { /*
   display: inline-block;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0;*/
 }
 
 
@@ -335,7 +375,7 @@ a.navbar-brand svg {
 
 /************************* Footer *************************/
 footer {
-	font-size: 14px;
+	font-size: 15px;
 	color: #fff;
 	background-color: #001c3f;
 	line-height: 1.7rem;
@@ -357,7 +397,7 @@ footer {
 }
 
 .col-svg svg {
-
+	float: left;
 }
 
 .nav-foot { 
@@ -578,7 +618,14 @@ ul.nav-foot-sub, ul.nav-foot-sub a {
 	width: 80%;
 }
 /*************************** SUBPAGES Hero Image END ***************************/
-
+/************************* Footer START *************************/
+.nav-foot { 
+	width: 100%;
+}
+.nav-foot-sub {
+	margin-bottom: 1rem;
+}
+/************************* Footer END *************************/
 
 }
 
