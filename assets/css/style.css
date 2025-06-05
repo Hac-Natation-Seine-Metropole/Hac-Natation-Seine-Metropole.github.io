@@ -232,9 +232,17 @@ h5 {
   bottom: 0;
 }
 
+.title_equipes {
+	width: 35%;
+}
+
 .title_underline_planning {
 	border: 5px solid #8bc4e5; /*#8bc4e5; #2ea3f2;*/
 	width: 30%;
+}
+
+.title_underline_equipes {
+	width: 35%;
 }
 /*************************** SUBPAGES Hero Image END ***************************/
 /*************************** SUBPAGES NO Hero Image START ***************************/
