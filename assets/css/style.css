@@ -321,6 +321,11 @@ body {
 	max-height: 80%;
 }
 
+.cardborderpb {
+	border: 1px solid rgba(0, 0, 0, .125);
+	margin-bottom: 80px;
+}
+
 
 /*************************** Les Officiels START ***************************/
 .regs-officiels {
